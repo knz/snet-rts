@@ -6,9 +6,11 @@ snetstuffdir = $(pkglibdir)
 snetstuff_DATA = \
 	compile_cmd link_cmd
 
-pkgdata_DATA =\
+pkgdata_DATA = \
 	src/snet.mkf \
 	snet-config.mkf
+
+EXTRA_DIST = src/snet.mkf
 
 snetstuff_SCRIPTS = \
 	libtool
@@ -91,7 +93,6 @@ libruntimestream_la_SOURCES = \
 	src/runtime/stream/shared/handle_p.h \
 	src/runtime/stream/entity/alias.c \
 	src/runtime/stream/entity/ast.c \
-	src/runtime/stream/entity/ast.h \
 	src/runtime/stream/entity/box.c \
 	src/runtime/stream/entity/collector.c \
 	src/runtime/stream/entity/collector.h \
